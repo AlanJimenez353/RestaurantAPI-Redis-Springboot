@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:coder
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database:
+      platform: org.hibernate.dialect.H2Dialect
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    timeOfLife: 60000
